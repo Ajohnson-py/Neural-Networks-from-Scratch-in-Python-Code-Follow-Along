@@ -40,23 +40,23 @@ bias3 = 0.5
 # since we have 3 neurons, there will be 3 outputs,
 # but we will use a list so all outputs are assigned to 1 variable
 output = [
-          # Neuron 1:
-          inputs[0] * weights1[0] +
-          inputs[1] * weights1[1] +
-          inputs[2] * weights1[2] +
-          inputs[3] * weights1[3] + bias1,
+    # Neuron 1:
+    inputs[0] * weights1[0] +
+    inputs[1] * weights1[1] +
+    inputs[2] * weights1[2] +
+    inputs[3] * weights1[3] + bias1,
 
-          # Neuron 2:
-          inputs[0] * weights2[0] +
-          inputs[1] * weights2[1] +
-          inputs[2] * weights2[2] +
-          inputs[3] * weights2[3] + bias2,
+    # Neuron 2:
+    inputs[0] * weights2[0] +
+    inputs[1] * weights2[1] +
+    inputs[2] * weights2[2] +
+    inputs[3] * weights2[3] + bias2,
 
-          # Neuron 3:
-          inputs[0] * weights3[0] +
-          inputs[1] * weights3[1] +
-          inputs[2] * weights3[2] +
-          inputs[3] * weights3[3] + bias3
+    # Neuron 3:
+    inputs[0] * weights3[0] +
+    inputs[1] * weights3[1] +
+    inputs[2] * weights3[2] +
+    inputs[3] * weights3[3] + bias3
 ]
 
 print(output)
@@ -113,12 +113,12 @@ a = [1, 2, 3]
 b = [2, 3, 4]
 
 a = np.array([a])
-b = np.array([b]).T # the .T is what makes the vector a colum vector
+b = np.array([b]).T  # the .T is what makes the vector a colum vector
 
 print(np.dot(a, b))
 print("-------------")
 
-# model of a layer of neurons with a batch of inputs
+# model of a layer of neurons with a batch of inputs:
 inputs = [[1, 2, 3, 2.5],
           [2, 5, -1, 2],
           [-1.5, 2.7, 3.3, -0.8]]
